@@ -5,11 +5,13 @@
  import {ancientsData} from './ancients.js'
 
 const choiseText = document.querySelector('.wrapper p');
+const regameWrap = document.querySelector('.regame-wrap');
+const regameButton = document.querySelector('.regame');
 const buttonCards = document.querySelector('.button-wrapper');
 const ancientsList = document.querySelector('.ancients-list');
 const levelList = document.querySelector('.list-level');
 const levelListWrapper = document.querySelector('.list-level-wrapper');
-const buttonDeckOfCards = document.querySelector('button');
+const buttonDeckOfCards = document.querySelector('.deck-cards');
 const indicateFirstStageGreen = document.querySelector('.first-stage .green'),
       indicateFirstStageBrown = document.querySelector('.first-stage .brown'),
 		indicateFirstStageBlue = document.querySelector('.first-stage .blue'),
@@ -112,6 +114,10 @@ buttonDeckOfCards.addEventListener('click', ()=>{
 
 cardBack.addEventListener('click', () =>{
 	showFaceCard()
+})
+
+regameButton.addEventListener('click', () =>{
+	window.location.reload();
 })
 
 function takeLevelCards(color, arr, normalArr){
@@ -312,6 +318,7 @@ function showFaceCard(){
 		}
 		if (thirdStageRandom.length === 0){
 			cardBack.style.background = 'none';
+			regameWrap.classList.remove('hide');
 		}
 	} 
 }
