@@ -1,0 +1,262 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+ }
+ *::before, *::after{
+	padding: 0;
+	margin: 0;
+ }
+
+ body{
+	background: url(assets/phone/image.jpg) 0 0/cover no-repeat;
+ }
+
+ .wrapper{
+	width: 100%;
+	padding: 10px 10px;
+ }
+
+ .wrapper p{
+	color: #00ff22;
+	text-align: center;
+	font-size: 24px;
+	margin: 0 0 20px;
+ }
+
+ .ancients-list{
+	list-style: none;
+	display: flex;
+	align-items: center;
+	margin: 0 -10px 50px;
+	justify-content: center;
+ }
+
+ .ancients-list li{
+	margin: 0 7px 0;
+	background-color: rebeccapurple;
+	width: 110px;
+	height: 180px;
+	border-radius: 5px;
+	transition: all 1s ease-in;
+ }
+
+ .ancients-list li:hover{
+	width: 510px;
+	height: 680px;
+	border-radius: 15px;
+ }
+
+ .azathoth{
+	background: url(assets/Ancients/Azathoth.jpg) center/cover no-repeat;
+ }
+
+ .cthulhu{
+	background: url(assets/Ancients/Cthulthu.jpg) center/cover no-repeat;
+ }
+
+ .iog-sothoth{
+	background: url(assets/Ancients/IogSothoth.jpg) center/cover no-repeat;
+ }
+
+ .shub-niggurath{
+	background: url(assets/Ancients/ShubNiggurath.jpg) center/cover no-repeat;
+ }
+
+ .list-level-wrapper{
+	display: flex;
+	justify-content: center;
+	margin: 0 0 50px;
+ }
+
+ .list-level span{
+	display: inline-block;
+	background: linear-gradient(45deg, #095c35 33%, #0b7958 66%, #32ad80);
+	background-clip: text;
+	color: transparent;    
+	-webkit-background-clip: text;
+	width: max-content;
+	font-size: 24px;
+	font-weight: 700;
+	font-style: italic;
+	position: relative;
+	margin: 0 0 10px;
+ }
+
+ .list-level span::after{
+	content: 'Сложность';
+	position: absolute;
+	z-index: -1;
+	left: 1px;
+   bottom: 12px;
+	width: 150px;
+   height: 14px;
+	color:  rgb(2, 43, 22);
+ }
+
+ .list-level span::before{
+	content: '';
+	position: absolute;
+	z-index: -1;
+	left: 80px;
+   bottom: 0px;
+	width: 150px;
+   height: 14px;
+   transform: skew(-30deg) translateX(-50%);
+   background: linear-gradient(45deg, #05331e 33%, #074435 66%, #346654);
+	filter: drop-shadow(2px 2px rgb(3, 39, 28));
+ }
+
+ .list-level li{
+	text-transform: lowercase;
+	font-size: 18px;
+	color: #207c53;
+	background: #05331e;
+	margin: 0 0 5px;
+	width: 150px;
+	text-align: center;
+	border-radius: 15px;
+	transition: all 0.2s ease-in;
+ }
+
+ .list-level li:hover{
+	color: #c7f788;
+	background: gray;
+ }
+
+ .list-level li:active{
+	color: red;
+	box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.8) inset;
+ }
+
+ .button-wrapper{
+	display: flex;
+	justify-content: center;
+	margin: 0 0 50px;
+ }
+
+ button{
+	border: solid 1px #0b7958 ;
+	outline: inherit;
+	color: #0b7958;
+	background-color: #05331e;
+	padding: 10px 20px;
+	box-shadow: 0px 0px 2px 2px rgba(2, 41, 19, 0.64) inset;
+	text-transform: uppercase;
+	font-weight: 700;
+	transition: all 0.2s ease-in;
+ }
+
+ button:hover{
+	border: solid 1px #00ff15 ;
+	color: #1eff00;
+	background-color: #556856;
+	box-shadow: none;
+ }
+
+ button:active{
+	box-shadow: 0px 0px 8px 8px rgba(2, 41, 19, 0.8) inset;
+	color: red;
+ }
+
+ .stage span{
+	display: inline-block;
+	background: linear-gradient(180deg, rgb(7, 58, 47), rgb(18, 142, 71), rgb(146, 255, 144));
+	background-clip: text;
+	color: transparent;    
+	-webkit-background-clip: text;
+	width: max-content;
+	font-size: 20px;
+	font-weight: 700;
+	position: relative;
+	margin: 0 0 5px;
+ }
+
+ .stage ul{
+	list-style: none;
+	display: flex;
+	width: 140px;
+	justify-content: space-between;
+	margin: 0 0 5px;
+ }
+
+ .indicate{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+	width: 30px;
+	height: 30px;
+	border-radius: 5px;
+	text-align: center;
+ }
+
+ .indicator__list{
+	list-style: none;
+ }
+
+ .green{
+	background: linear-gradient(135deg, rgb(7, 58, 13), rgb(20, 142, 18), rgb(22, 255, 19));
+	box-shadow: 0px 0px 1px 2px rgba(2, 41, 5, 0.64) inset;
+	color: #05330b;
+	border: solid 1px #00ff22; 
+ }
+
+ .brown{
+	background: linear-gradient(135deg, rgb(58, 40, 7), rgb(142, 92, 18), rgb(255, 180, 19));
+	box-shadow: 0px 0px 1px 2px rgba(41, 27, 2, 0.64) inset;
+	color: #332305;
+	border: solid 1px #ff9900;
+ }
+
+ .blue{
+	background: linear-gradient(135deg, rgb(7, 25, 58), rgb(18, 51, 142), rgb(19, 121, 255));
+	box-shadow: 0px 0px 1px 2px rgba(2, 18, 41, 0.64) inset;
+	color: #051e33;
+	border: solid 1px #0084ff;
+ }
+
+.card-area{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+ .card{
+	background-color: rgba(142, 243, 186, 0.2);
+	border: solid 1px #00ff22;
+	border-radius: 10px;
+	height: 570px;
+	width: 800px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+ }
+
+ .card-square{
+	width: 380px;
+	height: 550px;
+	background-color: rgba(32, 146, 21, 0.64);
+	border-radius: 15px;
+	box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.64)
+ }
+
+.choised{
+	box-shadow: 0px 0px 2px 2px red;
+	pointer-events: none;
+}
+
+.choised-level{
+	box-shadow: 0px 0px 2px 2px rgba(255, 0, 0, 0.8) inset;
+	pointer-events: none;
+}
+
+.choised-game{
+	pointer-events: none;
+}
+
+.hide{
+	display: none;
+}

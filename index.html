@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eldritch Horrornt</title>
+	<link rel="icon" href="./assets/cthulhu.png" type="image/png">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div class="wrapper">
+		<p>Выбери древнего</p>
+		<ul class="ancients-list"> 
+			<li class="azathoth"></li>
+			<li class="cthulhu"></li>
+			<li class="iog-sothoth"></li>
+			<li class="shub-niggurath"></li>
+		</ul>
+		<div class="list-level-wrapper hide">
+			<ul class="list-level"> <span>Сложность</span>
+				<li class="simple">Очень низкая</li>
+				<li class="easy">Низкая</li>
+				<li class="normal">Средняя</li>
+				<li class="hard">Высокая</li>
+				<li class="difficult">Очень высокая</li>
+			</ul>
+		</div>
+		<div class="button-wrapper hide">
+			<button>Замешать колоду</button>
+		</div>
+	   <div class="card-area hide">
+			<div class="indicator">
+				<ul class="indicator__list">
+					<li class="stage"> 
+						<span>Первая стадия</span>
+						<ul class="first-stage" >  
+							<li class="indicate green">0</li>
+							<li class="indicate brown">0</li>
+							<li class="indicate blue">0</li>
+					   </ul>
+				   </li>
+					<li class="stage"> 
+						<span>Вторая стадия</span> 
+						<ul class="second-stage"> 
+							<li class="indicate green">0</li>
+							<li class="indicate brown">0</li>
+							<li class="indicate blue">0</li>
+					   </ul>
+				   </li>
+					<li class="stage"> 
+						<span>Третья стадия</span>
+						<ul class="third-stage">  
+							<li class="indicate green">0</li>
+							<li class="indicate brown">0</li>
+							<li class="indicate blue">0</li>
+					   </ul>
+				   </li>
+				</ul>
+			</div>
+			<div class="card">
+				<div class="card-square card__back"></div>
+				<div class="card-square card__face"></div>
+			</div>
+		</div>
+	</div>
+	<script type="module" src="./data/script.js"></script>
+</body>
+</html>
